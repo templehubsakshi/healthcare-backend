@@ -3,7 +3,7 @@
 REST API for managing patients, doctors and the assignment of doctors to patients.
 Built with Node.js, Express, PostgreSQL (Sequelize ORM) and JWT authentication.
 
-> Built with Node.js/Express (approved by the team over email) instead of Django.
+> Built with Node.js/Express .
 
 ## Tech stack
 
