@@ -1,0 +1,16 @@
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/db');
+
+const Doctor = sequelize.define(
+  'Doctor',
+  {
+    name: { type: DataTypes.STRING(100), allowNull: false },
+    specialization: { type: DataTypes.STRING(100), allowNull: false },
+    email: { type: DataTypes.STRING(150), unique: true },
+    phone: DataTypes.STRING(20),
+    experienceYears: { type: DataTypes.INTEGER, defaultValue: 0 },
+  },
+  { tableName: 'doctors' }
+);
+
+module.exports = Doctor;
